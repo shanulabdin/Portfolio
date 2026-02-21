@@ -1,14 +1,3 @@
-// JavaScript Document
-
-/*
-
-TemplateMo 609 Crypto Vault
-
-https://templatemo.com/tm-609-crypto-vault
-
-*/
-
-
 // Navigation scroll effect
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
@@ -191,7 +180,7 @@ document.querySelector('.testimonials-wrapper').addEventListener('mouseleave', (
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', (e) => {
    e.preventDefault();
-   alert('Thank you for your inquiry! Our team will contact you within 24 hours.');
+   alert('Thank you for your inquiry! I will contact you within 24 hours.');
    contactForm.reset();
 });
 
