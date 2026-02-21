@@ -1243,6 +1243,7 @@ section {
 	text-align: center;
 	opacity: 0.5;
 	transition: opacity 0.3s ease;
+	cursor: default;
 }
 
 .trust-item:hover {
@@ -1252,7 +1253,7 @@ section {
 .trust-logo {
 	font-family: "Manrope", sans-serif;
 	font-size: 18px;
-	color: var(--text-secondary);
+	color: var(--gold-primary);
 	letter-spacing: 0.1em;
 }
 
