@@ -105,11 +105,15 @@ const tabBtns = document.querySelectorAll('.tab-btn');
 
 tabBtns.forEach(btn => {
    btn.addEventListener('click', () => {
-      // Remove active from all
+      const isActive = btn.classList.contains('active');
+
+      // 1. Close all others
       tabBtns.forEach(b => b.classList.remove('active'));
 
-      // Add active to clicked
-      btn.classList.add('active');
+      // 2. Toggle the current one (if it wasn't active, open it)
+      if (!isActive) {
+         btn.classList.add('active');
+      }
    });
 });
 

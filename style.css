@@ -888,9 +888,7 @@ section {
 	width: 100%;
 	max-width: 1000px;
 	margin: 0 auto;
-	gap: 15px;
-	height: 120px;
-	/* Adjust based on your design */
+	height: 480px;
 	align-items: stretch;
 }
 
@@ -909,11 +907,14 @@ section {
 	position: relative;
 	text-align: left;
 }
+.tab-btn:hover {
+	border-color: var(--orange-primary);
 
+}
 /* The Label/Title always visible */
 .tab-title {
 	font-family: "Manrope", sans-serif;
-	font-size: 12px;
+	font-size: 40px;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 1px;
