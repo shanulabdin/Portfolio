@@ -177,11 +177,28 @@ document.querySelector('.testimonials-wrapper').addEventListener('mouseleave', (
 });
 
 // Form submission
-const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', (e) => {
-   e.preventDefault();
-   alert('Thank you for your inquiry! I will contact you within 24 hours.');
-   contactForm.reset();
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+   e.preventDefault(); // Prevent default submission
+   const form = e.target;
+
+   fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+   })
+      .then(response => {
+         if (response.ok) {
+            alert('Thank you for your inquiry! I will contact you within 24 hours.');
+            form.reset(); // Clear form
+         } else {
+            response.json().then(data => {
+               alert(data.error || "Oops! There was a problem submitting your form.");
+            })
+         }
+      })
+      .catch(error => {
+         alert("Oops! There was a problem submitting your form.");
+      });
 });
 
 // Simulate live price updates (for demo purposes)
