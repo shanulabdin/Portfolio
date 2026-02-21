@@ -1665,3 +1665,88 @@ section {
 .delay-4 {
 	animation-delay: 0.4s;
 }
+
+.products-tabs {
+	display: flex;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	gap: 15px;
+	height: 120px;
+	/* Adjust based on your design */
+	align-items: stretch;
+}
+
+.tab-btn {
+	flex: 1;
+	/* All buttons start equal width */
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	background: var(--bg-card);
+	border: 1px solid var(--border-color);
+	cursor: pointer;
+	overflow: hidden;
+	/* Important for the slide effect */
+	transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	position: relative;
+	text-align: left;
+}
+
+/* The Label/Title always visible */
+.tab-title {
+	font-family: "Manrope", sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: var(--text-secondary);
+	white-space: nowrap;
+	min-width: fit-content;
+}
+
+/* The Hidden Content */
+.tab-content {
+	opacity: 0;
+	transform: translateX(30px);
+	/* Start slightly to the right */
+	transition: all 0.4s ease;
+	margin-left: 20px;
+	pointer-events: none;
+	white-space: nowrap;
+	/* Keeps text from wrapping during expansion */
+}
+
+.product-name {
+	color: #000;
+	/* Black text on orange background */
+	font-size: 16px;
+	margin: 0;
+}
+
+.product-description {
+	color: rgba(0, 0, 0, 0.8);
+	font-size: 13px;
+	margin: 4px 0 0 0;
+}
+
+/* ACTIVE STATE */
+.tab-btn.active {
+	flex: 4;
+	/* Widens the card significantly */
+	background: var(--orange-primary);
+	border-color: var(--orange-primary);
+}
+
+.tab-btn.active .tab-title {
+	color: #000;
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+	padding-right: 20px;
+}
+
+.tab-btn.active .tab-content {
+	opacity: 1;
+	transform: translateX(0);
+	/* Slide into position */
+	pointer-events: auto;
+}
