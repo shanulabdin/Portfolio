@@ -18,6 +18,7 @@
 	--success: #4A7C59;
 	--danger: #8B3A3A;
 }
+
 /* .manrope-<uniquifier> {
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
@@ -921,19 +922,19 @@ section {
 
 .products-grid {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	/* grid-template-columns: repeat(4, 1fr); */
 	gap: 24px;
 }
 
 /* Products Tab Content */
 .products-tab-content {
-
+	width: 100vw;
 	display: none;
 }
 
 .products-tab-content.active {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	/* grid-template-columns: repeat(4, 1fr); */
 	gap: 24px;
 }
 
@@ -941,8 +942,10 @@ section {
 
 	.products-tab-content.active,
 	.products-grid {
-		grid-template-columns: repeat(3, 1fr);
-		gap: 20px;
+		/* grid-template-columns: repeat(3, 1fr); */
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
 
@@ -950,7 +953,7 @@ section {
 
 	.products-tab-content.active,
 	.products-grid {
-		grid-template-columns: repeat(2, 1fr);
+		/* grid-template-columns: repeat(2, 1fr); */
 		gap: 16px;
 	}
 }
@@ -959,7 +962,7 @@ section {
 
 	.products-tab-content.active,
 	.products-grid {
-		grid-template-columns: 1fr;
+		/* grid-template-columns: 1fr; */
 		gap: 16px;
 	}
 
