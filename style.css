@@ -4,10 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 :root {
-	--gold-primary: #FF6D1F;
-	--gold-light: #FA8112;
-	--gold-dark: #ac5b10;
-	--gold-accent: #FFFFFF;
+	--orange-primary: #FF6D1F;
+	--orange-light: #FA8112;
+	--orange-dark: #ac5b10;
+	--orange-accent: #FFFFFF;
 	--bg-dark: #0F0E0C;
 	--bg-card: #1A1815;
 	--bg-card-hover: #252119;
@@ -115,7 +115,7 @@ img {
 	font-family: "Manrope", sans-serif;
 	font-size: 28px;
 	font-weight: 600;
-	color: var(--gold-light);
+	color: var(--orange-light);
 	letter-spacing: 0.15em;
 	text-transform: uppercase;
 }
@@ -149,7 +149,7 @@ img {
 	left: -20px;
 	top: 50%;
 	transform: translateY(-50%);
-	color: var(--gold-primary);
+	color: var(--orange-primary);
 	font-size: 10px;
 	opacity: 0;
 	transition: opacity 0.3s ease, left 0.3s ease;
@@ -157,7 +157,7 @@ img {
 
 .nav-links a:hover,
 .nav-links a.active {
-	color: var(--gold-light);
+	color: var(--orange-light);
 }
 
 .nav-links a:hover::before,
@@ -227,8 +227,8 @@ img {
 }
 
 .mobile-menu-close:hover {
-	border-color: var(--gold-primary);
-	color: var(--gold-light);
+	border-color: var(--orange-primary);
+	color: var(--orange-light);
 }
 
 .mobile-nav-links {
@@ -257,13 +257,13 @@ img {
 	top: 50%;
 	transform: translateY(-50%) translateX(-10px);
 	opacity: 0;
-	color: var(--gold-primary);
+	color: var(--orange-primary);
 	transition: all 0.3s ease;
 }
 
 .mobile-nav-links a:hover,
 .mobile-nav-links a.active {
-	color: var(--gold-light);
+	color: var(--orange-light);
 	padding-left: 12px;
 }
 
@@ -301,23 +301,23 @@ img {
 
 .btn-outline {
 	background: transparent;
-	border: 1px solid var(--gold-primary);
-	color: var(--gold-light);
+	border: 1px solid var(--orange-primary);
+	color: var(--orange-light);
 }
 
 .btn-outline:hover {
-	background: var(--gold-primary);
+	background: var(--orange-primary);
 	color: var(--bg-dark);
 }
 
 .btn-primary {
-	background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dark) 100%);
+	background: linear-gradient(135deg, var(--orange-primary) 0%, var(--orange-dark) 100%);
 	color: var(--bg-dark);
-	border: 1px solid var(--gold-light);
+	border: 1px solid var(--orange-light);
 }
 
 .btn-primary:hover {
-	background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold-primary) 100%);
+	background: linear-gradient(135deg, var(--orange-light) 0%, var(--orange-primary) 100%);
 	transform: translateY(-2px);
 	box-shadow: 0 8px 30px rgba(184, 134, 11, 0.3);
 }
@@ -334,13 +334,13 @@ img {
 }
 
 .mobile-menu-btn:hover {
-	border-color: var(--gold-primary);
+	border-color: var(--orange-primary);
 }
 
 .mobile-menu-btn span {
 	width: 20px;
 	height: 1.5px;
-	background: var(--gold-light);
+	background: var(--orange-light);
 	transition: all 0.3s ease;
 	transform-origin: center;
 }
@@ -437,7 +437,7 @@ body.menu-open {
 }
 
 .hero-title .gold {
-	color: var(--gold-light);
+	color: var(--orange-light);
 	font-style: italic;
 }
 
@@ -470,7 +470,7 @@ body.menu-open {
 .stat-value {
 	font-family: "Manrope", sans-serif;
 	font-size: 36px;
-	color: var(--gold-light);
+	color: var(--orange-light);
 	margin-bottom: 4px;
 }
 
@@ -500,7 +500,7 @@ body.menu-open {
 	left: 40px;
 	right: 40px;
 	height: 2px;
-	background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+	background: linear-gradient(90deg, transparent, var(--orange-primary), transparent);
 }
 
 .price-header {
@@ -550,7 +550,7 @@ body.menu-open {
 
 .price-value .currency {
 	font-size: 32px;
-	color: var(--gold-light);
+	color: var(--orange-light);
 	vertical-align: top;
 }
 
@@ -586,7 +586,7 @@ body.menu-open {
 }
 
 .metal-item:hover {
-	border-color: var(--gold-primary);
+	border-color: var(--orange-primary);
 }
 
 .metal-name {
@@ -628,7 +628,7 @@ section {
 	font-size: 12px;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
-	color: var(--gold-primary);
+	color: var(--orange-primary);
 	margin-bottom: 16px;
 }
 
@@ -695,14 +695,14 @@ section {
 	left: 0;
 	right: 0;
 	height: 2px;
-	background: var(--gold-primary);
+	background: var(--orange-primary);
 	transform: scaleX(0);
 	transition: transform 0.4s ease;
 }
 
 .service-card:hover {
 	transform: translateY(-8px);
-	border-color: var(--gold-dark);
+	border-color: var(--orange-dark);
 	background: var(--bg-card-hover);
 }
 
@@ -717,16 +717,16 @@ section {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid var(--gold-dark);
-	color: var(--gold-light);
+	border: 1px solid var(--orange-dark);
+	color: var(--orange-light);
 	font-size: 24px;
 	transition: all 0.4s ease;
 }
 
 .service-card:hover .service-icon {
-	background: var(--gold-primary);
+	background: var(--orange-primary);
 	color: var(--bg-dark);
-	border-color: var(--gold-primary);
+	border-color: var(--orange-primary);
 }
 
 .service-title {
@@ -784,7 +784,7 @@ section {
 .why-number {
 	font-family: "Manrope", sans-serif;
 	font-size: 32px;
-	color: var(--gold-dark);
+	color: var(--orange-dark);
 	line-height: 1;
 	min-width: 40px;
 }
@@ -836,7 +836,7 @@ section {
 }
 
 .why-thumb:hover {
-	border-color: var(--gold-dark);
+	border-color: var(--orange-dark);
 	transform: scale(1.02);
 	z-index: 2;
 }
@@ -883,110 +883,162 @@ section {
 	}
 }
 
-/* Products Section */
-.products {
-	background: var(--bg-card);
-}
-
 .products-tabs {
 	display: flex;
-	justify-content: center;
-	gap: 8px;
-	margin-bottom: 60px;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	gap: 15px;
+	height: 120px;
+	/* Adjust based on your design */
+	align-items: stretch;
 }
 
 .tab-btn {
-	padding: 14px 32px;
-	background: transparent;
+	flex: 1;
+	/* All buttons start equal width */
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	background: var(--bg-card);
 	border: 1px solid var(--border-color);
-	color: var(--text-secondary);
+	cursor: pointer;
+	overflow: hidden;
+	/* Important for the slide effect */
+	transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	position: relative;
+	text-align: left;
+}
+
+/* The Label/Title always visible */
+.tab-title {
 	font-family: "Manrope", sans-serif;
 	font-size: 12px;
-	font-weight: 500;
-	letter-spacing: 0.1em;
+	font-weight: 700;
 	text-transform: uppercase;
-	cursor: pointer;
-	transition: all 0.3s ease;
+	letter-spacing: 1px;
+	color: var(--text-secondary);
+	white-space: nowrap;
+	min-width: fit-content;
 }
 
-.tab-btn:hover {
-	border-color: var(--gold-dark);
-	color: var(--text-primary);
+/* The Hidden Content */
+.tab-content {
+	opacity: 0;
+	transform: translateX(30px);
+	/* Start slightly to the right */
+	transition: all 0.4s ease;
+	margin-left: 20px;
+	pointer-events: none;
+	white-space: nowrap;
+	/* Keeps text from wrapping during expansion */
 }
 
+.product-name {
+	color: #000;
+	/* Black text on orange background */
+	font-size: 16px;
+	margin: 0;
+}
+
+.product-description {
+	color: rgba(0, 0, 0, 0.8);
+	font-size: 13px;
+	margin: 4px 0 0 0;
+}
+
+/* ACTIVE STATE */
 .tab-btn.active {
-	background: var(--gold-primary);
-	border-color: var(--gold-primary);
-	color: var(--bg-dark);
+	flex: 4;
+	/* Widens the card significantly */
+	background: var(--orange-primary);
+	border-color: var(--orange-primary);
 }
 
-.products-grid {
-	display: grid;
-	/* grid-template-columns: repeat(4, 1fr); */
-	gap: 24px;
+.tab-btn.active .tab-title {
+	color: #000;
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+	padding-right: 20px;
 }
 
-/* Products Tab Content */
-.products-tab-content {
-	width: 100vw;
-	display: none;
-}
-
-.products-tab-content.active {
-	display: grid;
-	/* grid-template-columns: repeat(4, 1fr); */
-	gap: 24px;
-}
-
-@media (max-width: 1200px) {
-
-	.products-tab-content.active,
-	.products-grid {
-		/* grid-template-columns: repeat(3, 1fr); */
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+.tab-btn.active .tab-content {
+	opacity: 1;
+	transform: translateX(0);
+	/* Slide into position */
+	pointer-events: auto;
 }
 
 @media (max-width: 900px) {
+	.products-tabs {
+		flex-direction: column;
+		/* Stack vertically on tablets */
+		height: auto;
+		/* Let content determine height */
+		gap: 12px;
+	}
 
-	.products-tab-content.active,
-	.products-grid {
-		/* grid-template-columns: repeat(2, 1fr); */
-		gap: 16px;
+	.tab-btn {
+		flex: none;
+		/* Disable the horizontal flex-grow logic */
+		width: 100%;
+		min-height: 60px;
+		transition: min-height 0.4s ease, background 0.3s ease;
+	}
+
+	.tab-btn.active {
+		min-height: 120px;
+		/* Expand downwards */
+		flex: none;
 	}
 }
 
 @media (max-width: 480px) {
-
-	.products-tab-content.active,
-	.products-grid {
-		/* grid-template-columns: 1fr; */
-		gap: 16px;
+	.products-tabs {
+		gap: 8px;
 	}
 
-	.product-info {
-		padding: 20px;
+	.tab-btn {
+		padding: 16px;
+	}
+
+	.tab-title {
+		font-size: 11px;
+		/* Slightly smaller for mobile screens */
+	}
+
+	/* Adjusting the slide-in text for small screens */
+	.tab-content {
+		margin-left: 15px;
+		white-space: normal;
+		/* Allow text to wrap so it doesn't cut off */
 	}
 
 	.product-name {
-		font-size: 18px;
+		font-size: 16px;
+		/* Matching your requested 18px-ish feel but constrained */
+		line-height: 1.2;
 	}
 
-	.product-weight {
-		font-size: 11px;
-		margin-bottom: 12px;
+	.product-description {
+		font-size: 12px;
+		margin-top: 4px;
+		opacity: 0.9;
 	}
 
-	.product-price {
-		font-size: 22px;
+	/* Change the divider to a horizontal one on mobile if active */
+	.tab-btn.active .tab-title {
+		border-right: none;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		padding-right: 0;
+		padding-bottom: 8px;
+		margin-bottom: 8px;
+		display: block;
+		/* Force title to its own line */
 	}
 
-	.product-btn {
-		width: 36px;
-		height: 36px;
-		font-size: 18px;
+	.tab-btn.active .tab-content {
+		margin-left: 0;
+		/* Align content to the left now that title is above it */
 	}
 }
 
@@ -998,7 +1050,7 @@ section {
 }
 
 .product-card:hover {
-	border-color: var(--gold-dark);
+	border-color: var(--orange-dark);
 	transform: translateY(-4px);
 }
 
@@ -1062,7 +1114,7 @@ section {
 .product-price {
 	font-family: "Manrope", sans-serif;
 	font-size: 24px;
-	color: var(--gold-light);
+	color: var(--orange-light);
 }
 
 .product-btn {
@@ -1080,8 +1132,8 @@ section {
 }
 
 .product-btn:hover {
-	background: var(--gold-primary);
-	border-color: var(--gold-primary);
+	background: var(--orange-primary);
+	border-color: var(--orange-primary);
 	color: var(--bg-dark);
 }
 
@@ -1098,7 +1150,7 @@ section {
 	left: 10%;
 	font-family: "Manrope", sans-serif;
 	font-size: 400px;
-	color: var(--gold-dark);
+	color: var(--orange-dark);
 	opacity: 0.05;
 	line-height: 1;
 	pointer-events: none;
@@ -1184,8 +1236,8 @@ section {
 
 .testimonial-arrow:hover {
 	opacity: 1;
-	border-color: var(--gold-primary);
-	color: var(--gold-light);
+	border-color: var(--orange-primary);
+	color: var(--orange-light);
 	background: rgba(184, 134, 11, 0.1);
 }
 
@@ -1222,7 +1274,7 @@ section {
 }
 
 .dot.active {
-	background: var(--gold-primary);
+	background: var(--orange-primary);
 	width: 32px;
 }
 
@@ -1253,7 +1305,7 @@ section {
 .trust-logo {
 	font-family: "Manrope", sans-serif;
 	font-size: 18px;
-	color: var(--gold-primary);
+	color: var(--orange-primary);
 	letter-spacing: 0.1em;
 }
 
@@ -1276,7 +1328,7 @@ section {
 }
 
 .cta-title .gold {
-	color: var(--gold-light);
+	color: var(--orange-light);
 }
 
 .cta-desc {
@@ -1340,7 +1392,7 @@ section {
 	justify-content: center;
 	background: var(--bg-dark);
 	border: 1px solid var(--border-color);
-	color: var(--gold-light);
+	color: var(--orange-light);
 	font-size: 16px;
 	flex-shrink: 0;
 }
@@ -1410,7 +1462,7 @@ section {
 .form-select:focus,
 .form-textarea:focus {
 	outline: none;
-	border-color: var(--gold-primary);
+	border-color: var(--orange-primary);
 	background: var(--bg-card-hover);
 }
 
@@ -1483,7 +1535,7 @@ section {
 }
 
 .footer-links a:hover {
-	color: var(--gold-light);
+	color: var(--orange-light);
 	padding-left: 8px;
 }
 
@@ -1518,8 +1570,8 @@ section {
 }
 
 .social-link:hover {
-	border-color: var(--gold-primary);
-	color: var(--gold-light);
+	border-color: var(--orange-primary);
+	color: var(--orange-light);
 	background: rgba(184, 134, 11, 0.1);
 }
 
@@ -1664,89 +1716,4 @@ section {
 
 .delay-4 {
 	animation-delay: 0.4s;
-}
-
-.products-tabs {
-	display: flex;
-	width: 100%;
-	max-width: 1000px;
-	margin: 0 auto;
-	gap: 15px;
-	height: 120px;
-	/* Adjust based on your design */
-	align-items: stretch;
-}
-
-.tab-btn {
-	flex: 1;
-	/* All buttons start equal width */
-	display: flex;
-	align-items: center;
-	padding: 20px;
-	background: var(--bg-card);
-	border: 1px solid var(--border-color);
-	cursor: pointer;
-	overflow: hidden;
-	/* Important for the slide effect */
-	transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-	position: relative;
-	text-align: left;
-}
-
-/* The Label/Title always visible */
-.tab-title {
-	font-family: "Manrope", sans-serif;
-	font-size: 12px;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	color: var(--text-secondary);
-	white-space: nowrap;
-	min-width: fit-content;
-}
-
-/* The Hidden Content */
-.tab-content {
-	opacity: 0;
-	transform: translateX(30px);
-	/* Start slightly to the right */
-	transition: all 0.4s ease;
-	margin-left: 20px;
-	pointer-events: none;
-	white-space: nowrap;
-	/* Keeps text from wrapping during expansion */
-}
-
-.product-name {
-	color: #000;
-	/* Black text on orange background */
-	font-size: 16px;
-	margin: 0;
-}
-
-.product-description {
-	color: rgba(0, 0, 0, 0.8);
-	font-size: 13px;
-	margin: 4px 0 0 0;
-}
-
-/* ACTIVE STATE */
-.tab-btn.active {
-	flex: 4;
-	/* Widens the card significantly */
-	background: var(--orange-primary);
-	border-color: var(--orange-primary);
-}
-
-.tab-btn.active .tab-title {
-	color: #000;
-	border-right: 1px solid rgba(0, 0, 0, 0.2);
-	padding-right: 20px;
-}
-
-.tab-btn.active .tab-content {
-	opacity: 1;
-	transform: translateX(0);
-	/* Slide into position */
-	pointer-events: auto;
 }
