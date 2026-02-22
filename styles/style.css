@@ -34,9 +34,25 @@
 html {
 	/* scroll-behavior: smooth; */
 }
-.container {
-  -webkit-overflow-scrolling: touch;
+
+/* Global selection (entire site) */
+::selection {
+	background-color: var(--orange-primary);
+	/* The highlight color */
+	color: #000;
+	/* The text color when highlighted */
 }
+
+/* Specific selection (only for certain sections) */
+.product-description::selection {
+	background-color: #fff;
+	color: var(--orange-primary);
+}
+
+.container {
+	-webkit-overflow-scrolling: touch;
+}
+
 body {
 	font-family: "Manrope", sans-serif;
 	background-color: var(--bg-dark);
