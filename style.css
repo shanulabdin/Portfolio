@@ -1360,14 +1360,14 @@ section {
 
 .trust-grid {
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(6, 1fr);
 	gap: 40px;
 	align-items: center;
 }
 
 .trust-item {
 	text-align: center;
-	opacity: 0.5;
+	opacity: 0.7;
 	transition: opacity 0.3s ease;
 	cursor: default;
 }
