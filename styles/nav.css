@@ -1,0 +1,85 @@
+
+/* Navigation */
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	padding: 20px 0;
+	transition: all 0.4s ease;
+}
+
+.nav.scrolled {
+	background: rgba(15, 14, 12, 0.95);
+	backdrop-filter: blur(20px);
+	padding: 14px 0;
+	border-bottom: 1px solid var(--border-color);
+}
+
+.nav-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	font-family: "Manrope", sans-serif;
+	font-size: 28px;
+	font-weight: 600;
+	color: var(--orange-light);
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+}
+
+.logo span {
+	color: var(--text-primary);
+	font-weight: 400;
+}
+
+.nav-links {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	list-style: none;
+}
+
+.nav-links a {
+	font-size: 13px;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--text-secondary);
+	position: relative;
+	padding: 8px 0;
+	transition: color 0.4s ease;
+}
+
+.nav-links a::before {
+	content: '―';
+	position: absolute;
+	left: -20px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: var(--orange-primary);
+	font-size: 10px;
+	opacity: 0;
+	transition: opacity 0.3s ease, left 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+	color: var(--orange-light);
+}
+
+.nav-links a:hover::before,
+.nav-links a.active::before {
+	opacity: 1;
+	left: -16px;
+}
+
+.nav-cta {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
