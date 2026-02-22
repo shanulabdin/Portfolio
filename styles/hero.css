@@ -9,6 +9,7 @@
 	position: relative;
 	padding: 120px 0 0px;
 	overflow: hidden;
+	/* background-color: white; */
 }
 
 .hero::before {
@@ -59,10 +60,10 @@
 /* Ensure the canvas fills its parent */
 .hero-visual canvas {
 	display: block;
-	width: 80% !important;
+	width: 100% !important;
 	height: 80% !important;
 	max-width: 940px;
-	max-height: 700px;
+	max-height: 780px;
 	object-fit: cover;
 }
 

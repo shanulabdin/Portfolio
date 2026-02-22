@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const centerX = window.innerWidth / 2;
     const centerY = window.innerHeight / 2;
 
-    displacementFilter.scale.x = (centerX - e.clientX) / 80;
-    displacementFilter.scale.y = (centerY - e.clientY) / 80;
+    displacementFilter.scale.x = (centerX - e.clientX) / 100;
+    displacementFilter.scale.y = (centerY - e.clientY) / 100;
   });
 });
