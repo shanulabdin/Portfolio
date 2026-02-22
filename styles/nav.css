@@ -1,4 +1,3 @@
-
 /* Navigation */
 .nav {
 	position: fixed;
@@ -39,43 +38,52 @@
 
 .nav-links {
 	display: flex;
-	align-items: center;
-	gap: 40px;
+	gap: 2rem;
 	list-style: none;
+	position: relative;
+	z-index: 10;
 }
 
-.nav-links a {
-	font-size: 13px;
-	font-weight: 400;
-	letter-spacing: 0.1em;
+.nav-link {
+	text-decoration: none;
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 16px;
 	text-transform: uppercase;
 	color: var(--text-secondary);
+	display: inline-flex;
+	/* Keeps spans in a row */
+	overflow: hidden;
+	/* Important: Hide the letters as they roll out */
+	height: 1.2em;
+	line-height: 1.2em;
+
+	pointer-events: auto !important;
+	cursor: pointer;
+}
+
+/* Individual letter styling */
+.nav-link span {
 	position: relative;
-	padding: 8px 0;
-	transition: color 0.4s ease;
+	display: inline-block;
+	transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+	transition-delay: calc(var(--i) * 0.02s);
+	/* Stagger effect */
 }
 
-.nav-links a::before {
-	content: '―';
+/* The rolling clone */
+.nav-link span::after {
+	content: attr(data-letter);
 	position: absolute;
-	left: -20px;
-	top: 50%;
-	transform: translateY(-50%);
-	color: var(--orange-primary);
-	font-size: 10px;
-	opacity: 0;
-	transition: opacity 0.3s ease, left 0.3s ease;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
+	top: 100%;
+	left: 0;
 	color: var(--orange-light);
+	/* The color it turns into on hover */
 }
 
-.nav-links a:hover::before,
-.nav-links a.active::before {
-	opacity: 1;
-	left: -16px;
+/* Hover state: Both letters slide up */
+.nav-link:hover span {
+	transform: translateY(-100%);
 }
 
 .nav-cta {
