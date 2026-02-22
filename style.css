@@ -917,7 +917,14 @@ section {
 
 /* The Hidden Content */
 .tab-content {
+	flex: 1;
+	display: flex;
 	opacity: 0;
+	flex-direction: column;
+	/* Stack Name and Description vertically */
+	justify-content: center;
+	/* Center them vertically in the card */
+	align-items: center;
 	/* Slide from right */
 	transform: translateX(50px);
 	/* Start slightly to the right */
@@ -991,9 +998,9 @@ section {
 	.products-tabs {
 		flex-direction: column;
 		/* Stack vertically on tablets */
-		height: auto;
 		/* Let content determine height */
 		gap: 12px;
+		height: 480px;
 	}
 
 	.tab-btn {
