@@ -32,9 +32,11 @@
 }
 
 html {
-	scroll-behavior: smooth;
+	/* scroll-behavior: smooth; */
 }
-
+.container {
+  -webkit-overflow-scrolling: touch;
+}
 body {
 	font-family: "Manrope", sans-serif;
 	background-color: var(--bg-dark);

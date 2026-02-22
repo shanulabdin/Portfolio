@@ -1,7 +1,7 @@
 /* 1. The entire scrollbar area */
 ::-webkit-scrollbar {
   width: 12px;               /* Width of vertical scrollbar */
-  height: 12px;              /* Height of horizontal scrollbar */
+  height: 2px;              /* Height of horizontal scrollbar */
 }
 
 /* 2. The track (the background) */
