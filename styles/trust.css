@@ -1,0 +1,30 @@
+/* Trust Section */
+.trust {
+	background: var(--bg-card);
+	padding: 80px 0;
+}
+
+.trust-grid {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 40px;
+	align-items: center;
+}
+
+.trust-item {
+	text-align: center;
+	opacity: 0.7;
+	transition: opacity 0.3s ease;
+	cursor: default;
+}
+
+.trust-item:hover {
+	opacity: 1;
+}
+
+.trust-logo {
+	font-family: "Manrope", sans-serif;
+	font-size: 18px;
+	color: var(--orange-primary);
+	letter-spacing: 0.1em;
+}
