@@ -883,6 +883,7 @@ section {
 	}
 }
 
+
 .products-tabs {
 	display: flex;
 	width: 100%;
@@ -896,6 +897,7 @@ section {
 	flex: 1;
 	/* All buttons start equal width */
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	padding: 20px;
 	background: var(--bg-card);
@@ -905,33 +907,25 @@ section {
 	/* Important for the slide effect */
 	transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 	position: relative;
-	text-align: left;
+	text-align: center;
 }
+
 .tab-btn:hover {
 	border-color: var(--orange-primary);
+}
 
-}
-/* The Label/Title always visible */
-.tab-title {
-	font-family: "Manrope", sans-serif;
-	font-size: 40px;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	color: var(--text-secondary);
-	white-space: nowrap;
-	min-width: fit-content;
-}
 
 /* The Hidden Content */
 .tab-content {
 	opacity: 0;
-	transform: translateX(30px);
+	/* Slide from right */
+	transform: translateX(50px);
 	/* Start slightly to the right */
 	transition: all 0.4s ease;
 	margin-left: 20px;
 	pointer-events: none;
-	white-space: nowrap;
+	width: 50%;
+	min-width: 300px;
 	/* Keeps text from wrapping during expansion */
 }
 
@@ -956,10 +950,34 @@ section {
 	border-color: var(--orange-primary);
 }
 
+/* The Label/Title always visible */
+.tab-title {
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+	font-family: "Manrope", sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: var(--text-secondary);
+	white-space: nowrap;
+	min-width: fit-content;
+	padding-left: 0;
+	border-left: 2px solid transparent;
+
+	/* 2. Ensure all properties transition */
+	transition:
+		padding 0.5s ease,
+		border-color 0.5s ease,
+		color 0.3s ease,
+		transform 0.5s ease;
+}
+
 .tab-btn.active .tab-title {
 	color: #000;
-	border-right: 1px solid rgba(0, 0, 0, 0.2);
-	padding-right: 20px;
+	/* 3. Transition to these values */
+	border-left: 2px solid rgba(0, 0, 0, 0.2);
+	padding-left: 20px;
 }
 
 .tab-btn.active .tab-content {
@@ -1042,6 +1060,7 @@ section {
 		/* Align content to the left now that title is above it */
 	}
 }
+
 
 .product-card {
 	background: var(--bg-dark);
