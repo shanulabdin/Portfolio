@@ -923,7 +923,6 @@ section {
 	flex-direction: column;
 	/* Stack Name and Description vertically */
 	justify-content: center;
-	/* Center them vertically in the card */
 	align-items: center;
 	/* Slide from right */
 	transform: translateX(50px);
@@ -931,21 +930,15 @@ section {
 	transition: all 0.4s ease;
 	margin-left: 20px;
 	pointer-events: none;
-	width: 50%;
+	width: 300px;
 	min-width: 300px;
+	max-width: 300px;
 	/* Keeps text from wrapping during expansion */
-}
-
-.product-name {
-	color: #000;
-	/* Black text on orange background */
-	font-size: 16px;
-	margin: 0;
 }
 
 .product-description {
 	color: rgba(0, 0, 0, 0.8);
-	font-size: 13px;
+	font-size: 20px;
 	margin: 4px 0 0 0;
 }
 
@@ -995,77 +988,11 @@ section {
 }
 
 @media (max-width: 900px) {
-	.products-tabs {
-		flex-direction: column;
-		/* Stack vertically on tablets */
-		/* Let content determine height */
-		gap: 12px;
-		height: 480px;
-	}
 
-	.tab-btn {
-		flex: none;
-		/* Disable the horizontal flex-grow logic */
-		width: 100%;
-		min-height: 60px;
-		transition: min-height 0.4s ease, background 0.3s ease;
-	}
-
-	.tab-btn.active {
-		min-height: 120px;
-		/* Expand downwards */
-		flex: none;
-	}
 }
 
 @media (max-width: 480px) {
-	.products-tabs {
-		gap: 8px;
-	}
 
-	.tab-btn {
-		padding: 16px;
-	}
-
-	.tab-title {
-		font-size: 11px;
-		/* Slightly smaller for mobile screens */
-	}
-
-	/* Adjusting the slide-in text for small screens */
-	.tab-content {
-		margin-left: 15px;
-		white-space: normal;
-		/* Allow text to wrap so it doesn't cut off */
-	}
-
-	.product-name {
-		font-size: 16px;
-		/* Matching your requested 18px-ish feel but constrained */
-		line-height: 1.2;
-	}
-
-	.product-description {
-		font-size: 12px;
-		margin-top: 4px;
-		opacity: 0.9;
-	}
-
-	/* Change the divider to a horizontal one on mobile if active */
-	.tab-btn.active .tab-title {
-		border-right: none;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-		padding-right: 0;
-		padding-bottom: 8px;
-		margin-bottom: 8px;
-		display: block;
-		/* Force title to its own line */
-	}
-
-	.tab-btn.active .tab-content {
-		margin-left: 0;
-		/* Align content to the left now that title is above it */
-	}
 }
 
 
@@ -1119,7 +1046,7 @@ section {
 
 .product-name {
 	font-family: "Manrope", sans-serif;
-	font-size: 20px;
+	font-size: 28px;
 	color: var(--text-primary);
 	margin-bottom: 4px;
 }
