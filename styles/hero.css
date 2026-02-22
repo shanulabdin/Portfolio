@@ -26,18 +26,7 @@
 .hero-grid {
 	align-items: end;
 	width: 100%;
-}
-
-.hero-title {
-	font-size: clamp(44px, 5vw, 70px);
-	color: var(--text-primary);
-	margin-bottom: 24px;
-	font-weight: 400;
-}
-
-.hero-title .gold {
-	color: var(--orange-light);
-	font-style: italic;
+	max-width: 600px;
 }
 
 .hero-visual {
@@ -73,4 +62,25 @@ canvas {
 	height: auto !important;
 	border-radius: 12px;
 	/* Optional: matches a 'premium' look */
+}
+
+.hero-content {
+	position: absolute;
+	bottom: 60px;
+	left: 60px;
+	z-index: 10;
+	max-width: 500px;
+	pointer-events: none;
+	text-transform: uppercase;
+}
+
+.hero-title {
+	font-size: clamp(60px, 6vw, 80px);
+	color: var(--text-primary);
+	font-weight: 800;
+	line-height: 0.731;
+}
+
+.hero-title .gold {
+	color: var(--orange-light);
 }
