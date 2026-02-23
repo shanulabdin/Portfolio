@@ -1,25 +1,35 @@
 /* Trust Section */
 .trust {
 	background: var(--bg-card);
-	padding: 80px 0;
+	padding: 0 0;
 }
 
 .trust-grid {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	gap: 40px;
-	align-items: center;
+	grid-auto-rows: 120px;
+	align-items: stretch;
 }
 
 .trust-item {
-	text-align: center;
-	opacity: 0.7;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
 	transition: opacity 0.3s ease;
 	cursor: default;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .trust-item:hover {
 	opacity: 1;
+	background-color: var(--orange-primary);
+}
+
+.trust-item:hover .trust-logo {
+	color: var(--bg-card);
 }
 
 .trust-logo {
@@ -27,4 +37,16 @@
 	font-size: 18px;
 	color: var(--orange-primary);
 	letter-spacing: 0.1em;
+}
+
+@media (max-width: 992px) {
+	.trust-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 768px) {
+	.trust-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
