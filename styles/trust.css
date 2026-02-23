@@ -3,6 +3,9 @@
 	background: var(--bg-card);
 	padding: 0 0;
 }
+.trust .container{
+	padding: 0 0;
+}
 
 .trust-grid {
 	display: grid;
