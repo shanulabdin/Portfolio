@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const visualContainer = document.querySelector('.price-metals');
+  const visualContainer = document.querySelector('.hero-visual');
 
   // Initialize PIXI
   const app = new PIXI.Application({
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const centerX = window.innerWidth / 2;
     const centerY = window.innerHeight / 2;
 
-    displacementFilter.scale.x = (centerX - e.clientX) / 20;
-    displacementFilter.scale.y = (centerY - e.clientY) / 20;
+    displacementFilter.scale.x = (centerX - e.clientX) / 10;
+    displacementFilter.scale.y = (centerY - e.clientY) / 10;
   });
 });
