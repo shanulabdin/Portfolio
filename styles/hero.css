@@ -81,7 +81,7 @@
 	width: clamp(260px, 85vw, 420px);
 	aspect-ratio: 1 / 1;
 	background: var(--bg-card);
-	border: 1px solid var(--border-color);
+	border: 2px solid var(--border-color);
 	position: relative;
 
 	overflow: hidden;
