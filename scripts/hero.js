@@ -17,10 +17,3 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % totalImages;
   imageStack.style.transform = `translateY(-${currentIndex * 100}%)`;
 }, 1800);
-
-document.getElementById("image-card").addEventListener("mouseenter", () => {
-  clearInterval(scrollInterval);
-});
-document.getElementById("image-card").addEventListener("mouseleave", () => {
-  scrollInterval = setInterval(scrollImages, 1800);
-});
