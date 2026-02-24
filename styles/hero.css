@@ -7,6 +7,7 @@
 	padding: 120px 0 80px;
 	overflow: hidden;
 	background-color: black;
+	/* background-image: url("/images/project-1.png"); */
 }
 
 .hero-title {
@@ -15,6 +16,12 @@
 	display: flex;
 	align-items: baseline;
 	gap: clamp(6px, 1vw, 12px);
+}
+
+.hero-title h1 {
+	font-size: clamp(28px, 6vw, 60px);
+	font-weight: 400;
+	width: clamp(28px, 6vw, 600px);
 }
 
 .changing-wrapper {
@@ -47,7 +54,54 @@
 .hero-actions .btn {
 	font-size: 16px;
 	padding: 14px 28px;
+	margin-bottom: 25px;
 }
+
+.hero-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.hero-content {
+	display: flex;
+	align-items: center;
+	justify-self: end;
+	flex-direction: column;
+}
+
+.hero-visual {
+	display: flex;
+	align-items: center;
+	justify-self: end;
+}
+
+.image-card {
+	width: clamp(260px, 30vw, 420px);
+	aspect-ratio: 1 / 1;
+	background: var(--bg-card);
+	border: 1px solid var(--border-color);
+}
+
+/* .image-card {
+	background: var(--bg-card);
+	border: 1px solid var(--border-color);
+	padding: 40px;
+	position: relative;
+	height: 100%;
+	width: 100%;
+} */
+/* .image-card::before {
+	content: '';
+	position: absolute;
+	top: -1px;
+	left: 40px;
+	right: 40px;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, var(--orange-primary), transparent);
+} */
 
 @media (max-width: 768px) {
 	.hero {
