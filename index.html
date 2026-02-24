@@ -162,12 +162,12 @@
                         <div class="why-thumb">
                             <img src="images/project-6.png" alt="Business Website">
                         </div>
-                        <!-- <div class="why-thumb">
+                        <div class="why-thumb">
                             <img src="images/project-4.png" alt="Website Redesign">
                         </div>
                         <div class="why-thumb">
                             <img src="images/project-5.jpg" alt="Optimized Website">
-                        </div> -->
+                        </div>
                     </div>
                 </div>
 
@@ -180,10 +180,10 @@
         <div class="container">
             <div class="section-header">
                 <div class="section-label">My Process</div>
-                <h2 class="section-title">How I Bring Your Website To Life</h2>
+                <h2 class="section-title">How I Bring My Projects To Life</h2>
                 <p class="section-desc">
-                    A clear, step-by-step process designed to ensure your website looks premium and performs
-                    effectively.
+                    A clear, step-by-step process designed to ensure i complete my projects as quickly and
+                    effectively as possible.
                 </p>
             </div>
 
@@ -350,8 +350,8 @@
                     Whether you need a simple landing page or a full website, I can help bring your vision to life.
                 </p>
                 <div class="cta-actions">
-                    <a href="#contact" class="btn btn-primary">Get a Free Consultation</a>
-                    <a href="#contact" class="btn btn-outline">Request a Quote</a>
+                    <!-- <a href="#contact" class="btn btn-primary">Get a Free Consultation</a> -->
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
                 </div>
             </div>
         </div>
@@ -542,12 +542,18 @@
     <script type="module">
         import Lenis from 'https://unpkg.com/lenis@1.1.18/dist/lenis.mjs'
 
-        const lenis = new Lenis();
-        function raf(time) {
-            lenis.raf(time);
+        let lenis;
+
+        if (window.innerWidth > 900) {
+            lenis = new Lenis();
+
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+
             requestAnimationFrame(raf);
         }
-        requestAnimationFrame(raf);
     </script>
 </body>
 

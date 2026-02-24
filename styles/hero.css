@@ -1,21 +1,12 @@
 /* Hero Section */
 .hero {
 	min-height: 100vh;
+	min-height: 100svh;
 	display: flex;
 	align-items: center;
 	padding: 120px 0 80px;
 	overflow: hidden;
-}
-
-.hero::before {
-	content: '';
-	position: absolute;
-	top: -50%;
-	right: -20%;
-	width: 80%;
-	height: 150%;
-	background: radial-gradient(ellipse at center, rgba(184, 134, 11, 0.08) 0%, transparent 60%);
-	pointer-events: none;
+	background-color: black;
 }
 
 .hero-title {
@@ -60,7 +51,8 @@
 
 @media (max-width: 768px) {
 	.hero {
-		padding: 100px 0 60px;
+		padding: 40px 0;
+		height: 100svh;
 	}
 
 	.hero-actions .btn {
