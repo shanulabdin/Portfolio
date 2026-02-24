@@ -1,14 +1,9 @@
-const words = ["Websites", "Apps", "Videos"];
+const scrollText = document.getElementById("scroll-text");
+
 let index = 0;
-const text = document.getElementById("changing-text");
+const total = scrollText.children.length;
 
 setInterval(() => {
-  text.style.opacity = 0;
-
-  setTimeout(() => {
-    index = (index + 1) % words.length;
-    text.textContent = words[index];
-    text.style.opacity = 1;
-  }, 400);
-
-}, 2000);
+  index = (index + 1) % total;
+  scrollText.style.transform = `translateY(-${index * 33}%)`;
+}, 1800);
