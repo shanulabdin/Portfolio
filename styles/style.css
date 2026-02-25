@@ -214,24 +214,6 @@ section {
 	.products-tabs {
 		flex-wrap: wrap;
 	}
-
-	.testimonial-nav {
-		display: none;
-	}
-
-	.testimonial-item {
-		padding: 0 20px;
-	}
-}
-
-@media (min-width: 769px) and (max-width: 1100px) {
-	.testimonial-arrow.prev {
-		margin-left: -20px;
-	}
-
-	.testimonial-arrow.next {
-		margin-right: -20px;
-	}
 }
 
 /* Animations */

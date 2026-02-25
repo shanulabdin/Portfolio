@@ -138,3 +138,22 @@
 	background: var(--orange-primary);
 	width: 32px;
 }
+
+@media (min-width: 300px) and (max-width: 1100px) {
+	.testimonial-arrow.prev {
+		margin-left: -20px;
+	}
+
+	.testimonial-arrow.next {
+		margin-right: -20px;
+	}
+}
+
+/* @media (max-width: 768px) {
+	.testimonial-nav {
+	}
+
+	.testimonial-item {
+		padding: 0 20px;
+	}
+} */
